@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Regression Test Suite" parallel="tests" thread-count="3"  verbose="4">
+
+	<!-- <test name="Amazon App Test">
+	<parameter name="browser" value="Chrome" />
+	<parameter name="url" value="https://www.amazon.com" />
+	
+		<classes>
+			<class name="mytest.AmazonTest" />
+		</classes>
+	</test>
+
+	<test name="Ornage HRM App Test">
+	<parameter name="browser" value="Chrome" />
+	<parameter name="url" value="https://www.orangehrm.com/orangehrm-30-day-trial/" />
+		<classes>
+			<class name="mytest.OrangeHRMTest" />
+		</classes>
+	</test>
+
+	<test name="Google App Test">
+	<parameter name="browser" value="Chrome"/>
+	<parameter name="url" value="https://www.google.com" />
+		<classes>
+			<class name="mytest.GoogleTest" />
+		</classes>
+	</test> -->
+
+<!-- <test name="Negative Test for Login">
+	<parameter name="browser" value="Chrome"/>
+	<parameter name="url" value="https://www.opencart.com/index.php?route=account/login" />
+		<classes>
+			<class name="mytest.login_negative_Test" />
+		</classes>
+	</test> -->
+	
+	
+	<test name="Register Test for Demo Opencart">
+	<parameter name="browser" value="Chrome"/>
+	<parameter name="url" value="https://www.opencart.com/index.php?route=account/register" />
+		<classes>
+			<class name="mytest.opencartRegisterTest" />
+		</classes>
+	</test>
+</suite>

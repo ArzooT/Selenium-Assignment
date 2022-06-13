@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" verbose="4" name="Failed suite [TestNG Regression Test Suite]" parallel="tests">
+  <test thread-count="3" verbose="4" name="Register Test for Demo Opencart(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="url" value="https://www.opencart.com/index.php?route=account/register"/>
+    <classes>
+      <class name="mytest.opencartRegisterTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="registerUserTest" invocation-numbers="0 1 2"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- mytest.opencartRegisterTest -->
+    </classes>
+  </test> <!-- Register Test for Demo Opencart(failed) -->
+</suite> <!-- Failed suite [TestNG Regression Test Suite] -->
